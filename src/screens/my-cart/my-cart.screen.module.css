@@ -1,0 +1,11 @@
+.cartScreen_container {
+  padding: 7rem;
+}
+
+.cart_itemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  border: 1px solid red;
+}

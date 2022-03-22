@@ -1,0 +1,18 @@
+.heading {
+  font-size: 2.6rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  color: #0f172a;
+}
+
+.underline {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 4rem;
+  height: 0.4rem;
+  content: '';
+  display: block;
+  background: #f66249;
+}
