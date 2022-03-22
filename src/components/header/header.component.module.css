@@ -1,0 +1,79 @@
+.header_container {
+  background: url('../../assets/images/hero.jpg') no-repeat center/cover;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.header_cta_container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #fff;
+}
+
+.header_cta_heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.header_cta_heading h1 {
+  font-size: 7rem;
+  font-weight: 700;
+}
+.header_cta_heading p {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.header_action_container {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+
+.shop_now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f66249;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.shop_now:hover {
+  background: #c55a47;
+  transition: all 0.2s ease-in-out;
+}
+
+.outlined {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.outlined:hover {
+  background: #f66249;
+  color: #fff;
+}
