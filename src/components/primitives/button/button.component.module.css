@@ -1,0 +1,22 @@
+.primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f66249;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary:hover {
+  justify-content: center;
+  background: #a55041;
+  transition: all 0.2s ease-in-out;
+}

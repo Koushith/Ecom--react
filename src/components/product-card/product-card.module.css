@@ -1,7 +1,98 @@
-h1 {
-  color: red;
+.ecommerce_card {
+  width: 30rem;
+  height: 47rem;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 1.2rem;
+  cursor: pointer;
 }
 
-.heading {
-  color: aqua;
+.ecommerce_card:hover {
+  transform: scale(1.05);
+}
+.product_image > img {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: scale-down;
+}
+
+.card_badge {
+  position: absolute;
+  top: 20px;
+  left: -1px;
+  background-color: #f66249;
+  padding: 0.2rem 0.4rem;
+}
+
+.card_badge > h2 {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.actions_container {
+  padding: 0rem 2rem;
+}
+
+.product_heading {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+
+.flex_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #9ac849;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.rating i {
+  display: inline-flex;
+  font-size: 14px;
+  align-self: center;
+}
+
+.card_price,
+.price_now,
+.discount {
+  display: inline-flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 0.4rem;
+  color: #334155;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.discount {
+  color: #dc2626;
+}
+
+.actions_button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions_button i {
+  color: #dc2626;
+  cursor: pointer;
+}
+.actions_button i:hover {
+  transform: scale(1.1);
 }
