@@ -1,0 +1,135 @@
+.item_container {
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  padding: 2rem;
+  min-width: 450px;
+}
+
+.details_container {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.product_image > img {
+  width: 100%;
+  height: 150px;
+  display: block;
+  object-fit: scale-down;
+  cursor: pointer;
+}
+.product_image > img:hover {
+  transform: scale(1.1);
+}
+
+.product_heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.price_container {
+  display: flex;
+  gap: 1rem;
+}
+
+.price_container p {
+  /* font-size: 1.8rem;
+  font-weight: 700;
+  color: #334155; */
+  margin: 1rem 0;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #9ac849;
+  padding: 0.2rem 0.6rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #9ac849;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.rating i {
+  display: inline-flex;
+  font-size: 16px;
+  align-self: center;
+  justify-content: center;
+}
+
+.discounted_price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.actual_price {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #dc2626;
+  text-decoration: line-through;
+}
+
+.discount_percentage {
+  color: #16a34a;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.cart_actions {
+  display: flex;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+  border-top: 1px solid #0f172a;
+}
+
+.quantity_container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.quantity_container button {
+  border: 2px solid gray;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  color: #0f172a;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity_container input {
+  border: 2px solid gray;
+  height: 30px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cart_actions .ghost_button {
+  background: #fff !important;
+  color: #334155;
+  font-weight: 500;
+}
