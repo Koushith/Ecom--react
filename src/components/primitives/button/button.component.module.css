@@ -21,6 +21,7 @@
   transition: all 0.2s ease-in-out;
 }
 
+
 .ghost {
   display: flex;
   align-items: center;
@@ -42,3 +43,5 @@
   background: #f66249;
   color: #fff;
 }
+
+

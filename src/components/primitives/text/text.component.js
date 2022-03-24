@@ -1,4 +1,7 @@
+
 import heading from './text.component.module.css';
+
+
 
 export const Text = () => {
   return (
@@ -7,6 +10,7 @@ export const Text = () => {
     </>
   );
 };
+
 
 export const Heading = ({ label }) => {
   return (
@@ -18,3 +22,4 @@ export const Heading = ({ label }) => {
     </>
   );
 };
+

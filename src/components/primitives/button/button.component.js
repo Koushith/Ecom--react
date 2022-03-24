@@ -3,7 +3,7 @@ import buttonStyles from './button.component.module.css';
 //Todo- add different variants
 export const Button = (props) => {
   const { label, variant } = props;
-
+ feature/ec-08/cart-page
   const getVariant = (variant) => {
     let className;
 
@@ -22,4 +22,7 @@ export const Button = (props) => {
   };
   const computedClass = getVariant(variant);
   return <button className={buttonStyles[computedClass]}>{label}</button>;
+
+  return <button className={buttonStyles.primary}>{label}</button>;
+
 };
