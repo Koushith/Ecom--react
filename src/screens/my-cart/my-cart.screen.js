@@ -14,7 +14,6 @@ export const CartScreen = () => {
           <CartItem />
           <CartItem />
         </div>
-
         <ProductSummary />
       </div>
     </section>

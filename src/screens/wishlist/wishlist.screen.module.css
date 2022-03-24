@@ -1,0 +1,16 @@
+.wishlist_container {
+  padding: 7rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 8rem;
+}

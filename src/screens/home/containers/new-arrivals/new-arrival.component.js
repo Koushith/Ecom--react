@@ -8,14 +8,14 @@ export const NewArrival = () => {
         <span className={newArrival.underline}></span>New Arrivals{' '}
       </h2>
       <div className={newArrival.product_grid}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
       </div>
     </section>
   );

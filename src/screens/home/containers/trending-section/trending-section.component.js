@@ -7,14 +7,14 @@ export const TrendingSection = () => {
         <span className={trending.underline}></span>Tending Styles{' '}
       </h2>
       <div className={trending.product_grid}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
+        <ProductCard buttonLabel='ADD TO CART' />
       </div>
     </section>
   );
