@@ -1,16 +1,16 @@
 .products_container {
   display: flex;
-  border: 1px solid red;
 }
 
 .filter_options {
   flex: 0 0 350px;
-  border: 1px solid aqua;
+  background-color: #fff;
   padding: 4rem;
+  position: static;
 }
 
 .products_list {
   flex: 5 0 0;
-  border: 1px solid green;
+  background-color: #f7f6f9;
   padding: 4rem;
 }
