@@ -4,3 +4,5 @@ export * from './my-cart/my-cart.screen';
 export * from './product-details/product-details.screen';
 export * from './profile/profile.screen';
 export * from './wishlist/wishlist.screen';
+export * from './auth/register-screen';
+export * from './auth/login-screen';

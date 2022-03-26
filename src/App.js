@@ -6,6 +6,8 @@ import {
   ProductDetailsScreen,
   ProfileScreen,
   WishListScreen,
+  LoginScreen,
+  RegisterScreen,
 } from './screens';
 import './App.css';
 
@@ -18,6 +20,8 @@ function App() {
       <Route path='wishlist' element={<WishListScreen />} />
       <Route path='product/:id' element={<ProductDetailsScreen />} />
       <Route path='profile' element={<ProfileScreen />} />
+      <Route path='login' element={<LoginScreen />} />
+      <Route path='register' element={<RegisterScreen />} />
     </Routes>
   );
 }

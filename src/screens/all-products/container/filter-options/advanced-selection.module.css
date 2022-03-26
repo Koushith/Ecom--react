@@ -1,0 +1,21 @@
+.filter_container {
+  margin: 2.4rem 0;
+}
+
+.filter_container span {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #334155;
+  margin-left: 1rem;
+}
+
+.filter {
+  margin-top: 4rem;
+}
+
+.filter_by_size {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
