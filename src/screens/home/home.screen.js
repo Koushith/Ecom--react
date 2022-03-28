@@ -6,7 +6,6 @@ import { NavBar } from '../../components/common/navbar.component';
 export const HomeScreen = () => {
   return (
     <>
-      <NavBar />
       <HeaderComponent />
       <Shipping />
       <TrendingSection />
