@@ -7,10 +7,7 @@ function ProductCard(props) {
   return (
     <div className={productCardStyles.ecommerce_card}>
       <div className={productCardStyles.product_image}>
-        <img
-          src='https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/2/18/07b7a314-decd-421a-b447-01b2411e24e61613643428870-1.jpg'
-          alt='product-img'
-        />
+        <img src='https://getketchadmin.getketch.com/product/8905404555151/300/TTJ6006351_6.jpg' alt='product-img' />
       </div>
       <div className={productCardStyles.card_badge}>
         <h2>New</h2>

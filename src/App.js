@@ -9,7 +9,7 @@ import {
   LoginScreen,
   RegisterScreen,
 } from './screens';
-import './App.css';
+import Mockman from 'mockman-js';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
       <Route path='profile' element={<ProfileScreen />} />
       <Route path='login' element={<LoginScreen />} />
       <Route path='register' element={<RegisterScreen />} />
+      <Route path='mock' element={<Mockman />} />
     </Routes>
   );
 }
