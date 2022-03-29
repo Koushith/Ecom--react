@@ -15,7 +15,8 @@
 }
 
 .filter_by_size {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
+  width: 28rem;
   gap: 1rem;
 }

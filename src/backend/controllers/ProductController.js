@@ -11,7 +11,6 @@ import { Response } from 'miragejs';
  * */
 
 export const getAllProductsHandler = function () {
-  console.log('testtt', this.db);
   return new Response(200, {}, { products: this.db.products });
 };
 

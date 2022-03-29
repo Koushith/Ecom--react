@@ -1,27 +1,32 @@
 import React from 'react';
+import { discountCalc } from '../../utils';
 import { Button } from '../primitives/button/button.component';
 import productCardStyles from './product-card.module.css';
 
 function ProductCard(props) {
-  const { buttonLabel } = props;
+  const { buttonLabel, products } = props;
+  console.log('products', products);
   return (
     <div className={productCardStyles.ecommerce_card}>
       <div className={productCardStyles.product_image}>
-        <img src='https://getketchadmin.getketch.com/product/8905404555151/300/TTJ6006351_6.jpg' alt='product-img' />
+        <img src={products.imgOne} alt={products.title} />
       </div>
-      <div className={productCardStyles.card_badge}>
-        <h2>New</h2>
-      </div>
+
+      {products.newArrival && (
+        <div className={productCardStyles.card_badge}>
+          <h2>New</h2>
+        </div>
+      )}
       <div className={productCardStyles.actions_container}>
         <div className={productCardStyles.flex_container}>
-          <h2 className={productCardStyles.product_heading}>Athena top</h2>
+          <h2 className={productCardStyles.product_heading}>{products.title} </h2>
           <h3 className={productCardStyles.rating}>
-            4 <i className='fa-solid fa-star'></i>{' '}
+            {products.rating} <i className='fa-solid fa-star'></i>{' '}
           </h3>
         </div>
         <div className={productCardStyles.card_price}>
-          <h2 className={productCardStyles.price_now}> Rs.764 </h2>
-          <h2 className={productCardStyles.discount}> (62% OFF) </h2>
+          <h2 className={productCardStyles.price_now}> Rs.{products.price} </h2>
+          <h2 className={productCardStyles.discount}>({discountCalc(products.price, products.originalPrice)}% OFF) </h2>
         </div>
 
         <div className={productCardStyles.actions_button}>

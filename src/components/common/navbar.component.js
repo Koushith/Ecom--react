@@ -18,7 +18,7 @@ export const NavBar = () => {
 
         <nav>
           <ul>
-            <button variant='ghost' label='Login' class={navbarStyles.login_btn}>
+            <button variant='ghost' label='Login' className={navbarStyles.login_btn}>
               Login
             </button>
             <li>
