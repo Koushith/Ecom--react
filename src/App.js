@@ -9,8 +9,9 @@ import {
   LoginScreen,
   RegisterScreen,
 } from './screens';
-import './App.css';
+import Mockman from 'mockman-js';
 import { NavBar } from './components/common/navbar.component';
+import { Footer } from './components/common/footer';
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
         <Route path='profile' element={<ProfileScreen />} />
         <Route path='login' element={<LoginScreen />} />
         <Route path='register' element={<RegisterScreen />} />
+        <Route path='mock' element={<Mockman />} />
       </Routes>
+      <Footer />
     </>
   );
 }

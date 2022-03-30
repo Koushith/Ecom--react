@@ -1,0 +1,92 @@
+.footer_container {
+  width: 100%;
+  background-color: #14171e;
+  color: #fff;
+  padding: 2rem;
+  z-index: 30;
+}
+.footer_main {
+  width: 100%;
+  max-width: 1600px;
+  padding: 1rem;
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  z-index: 30;
+}
+
+.underline {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 4rem;
+  height: 0.4rem;
+  content: '';
+  display: block;
+  background: #f66249;
+}
+
+.sub_heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+}
+
+.copyright_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #14171e;
+}
+
+.copyright_container h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+
+.listContainer {
+  margin-top: 4rem;
+}
+
+.listContainer p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: 300px;
+  line-height: 2;
+  text-align: left;
+}
+
+.listContainer li {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6;
+  text-align: justify;
+  cursor: pointer;
+}
+.listContainer li:hover {
+  color: #f66249;
+}
+
+.listContainer i {
+  display: inline-flex;
+  margin-right: 1.2rem;
+}
+.listContainer i:hover {
+  color: #f66249;
+}
+
+.listContainer img {
+  margin-top: 1rem;
+}
+
+.flex_items {
+  align-self: flex-start;
+}

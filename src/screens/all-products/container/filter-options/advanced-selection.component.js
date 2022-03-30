@@ -4,7 +4,7 @@ import advancedFilter from './advanced-selection.module.css';
 
 export const AdvancedOption = () => {
   return (
-    <section>
+    <section style={{ position: 'sticky', top: '12%' }}>
       <div className={advancedFilter.filter}>
         <SubHeading label='Filter By Category' />
         <div className={advancedFilter.filter_container}>
