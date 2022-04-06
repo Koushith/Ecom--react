@@ -59,8 +59,24 @@
   font-size: 1.6rem;
   color: #fff;
 }
+.rating_red {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #f87171;
+  padding: 0.2rem 0.6rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
 
 .rating i {
+  display: inline-flex;
+  font-size: 14px;
+  align-self: center;
+}
+
+.rating_red i {
   display: inline-flex;
   font-size: 14px;
   align-self: center;

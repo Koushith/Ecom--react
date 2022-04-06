@@ -1,5 +1,6 @@
 .wishlist_container {
   padding: 7rem;
+  height: auto;
 }
 
 .heading {
@@ -13,4 +14,7 @@
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 8rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
