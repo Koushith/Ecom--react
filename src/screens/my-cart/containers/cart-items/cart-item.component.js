@@ -1,25 +1,26 @@
 import { Button } from '../../../../components';
+import { discountCalc } from '../../../../utils';
 import cartItem from './cart-item.component.module.css';
 
-export const CartItem = () => {
+export const CartItem = (props) => {
+  const { cartProducts } = props;
+
+  // console.log('itemsssss', items);
   return (
     <div className={cartItem.item_container}>
       <div className={cartItem.details_container}>
         <div className={cartItem.product_image}>
-          <img
-            src='https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2021/2/18/d23d46d1-816b-4ecc-ac6e-f1f7f412aeb31613650868037-1.jpg'
-            alt='product-img'
-          />
+          <img src={items.imgOne} alt='product-img' />
         </div>
         <div>
-          <h2 className={cartItem.product_heading}>Athena top</h2>
+          <h2 className={cartItem.product_heading}>{items.categoryName}</h2>
           <h3 className={cartItem.rating}>
-            4 <i className='fa-solid fa-star'></i>{' '}
+            {items.rating} <i className='fa-solid fa-star'></i>{' '}
           </h3>
           <div className={cartItem.price_container}>
-            <p className={cartItem.discounted_price}>₹850</p>
-            <p className={cartItem.actual_price}>(₹1500)</p>
-            <p className={cartItem.discount_percentage}>(50% OFF)</p>
+            <p className={cartItem.discounted_price}>₹ {items.price}</p>
+            <p className={cartItem.actual_price}>₹ {items.originalPrice}</p>
+            <p className={cartItem.discount_percentage}>({discountCalc(items.price, items.originalPrice)}% OFF)</p>
           </div>
           <div className={cartItem.quantity_container}>
             <button>-</button>

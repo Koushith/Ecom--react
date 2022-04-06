@@ -13,7 +13,7 @@ export const TrendingSection = () => {
       </h2>
       <div className={trending.product_grid}>
         {trendingProducts.map((item) => (
-          <ProductCard buttonLabel='ADD TO CART' products={item} />
+          <ProductCard buttonLabel='ADD TO CART' products={item} key={item._id} />
         ))}
       </div>
     </section>

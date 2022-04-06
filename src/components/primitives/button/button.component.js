@@ -2,7 +2,7 @@ import buttonStyles from './button.component.module.css';
 
 //Todo- add different variants
 export const Button = (props) => {
-  const { label, variant } = props;
+  const { label, variant, onClick } = props;
   const getVariant = (variant) => {
     let className;
 
@@ -20,5 +20,9 @@ export const Button = (props) => {
     return className;
   };
   const computedClass = getVariant(variant);
-  return <button className={buttonStyles[computedClass]}>{label}</button>;
+  return (
+    <button className={buttonStyles[computedClass]} onClick={onClick}>
+      {label}
+    </button>
+  );
 };
