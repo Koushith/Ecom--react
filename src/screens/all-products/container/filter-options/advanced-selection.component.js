@@ -6,7 +6,7 @@ export const AdvancedOption = () => {
   return (
     <section style={{ position: 'sticky', top: '12%' }}>
       <div className={advancedFilter.filter}>
-        <SubHeading label='Filter By Category' />
+        <SubHeading label='Products By Category' />
         <div className={advancedFilter.filter_container}>
           <label className='rating'>
             <input type='checkbox' name='sort' />
@@ -16,25 +16,19 @@ export const AdvancedOption = () => {
             <input type='checkbox' name='sort' />
             <span>Womens</span>
           </label>
+          <label className='rating'>
+            <input type='checkbox' name='sort' />
+            <span>Shoes</span>
+          </label>
+          <label className='rating'>
+            <input type='checkbox' name='sort' />
+            <span>Jackets</span>
+          </label>
         </div>
       </div>
 
       <div className={advancedFilter.filter}>
-        <SubHeading label=' Filter By Size' />
-        <div className={advancedFilter.filter_container}>
-          <div className={advancedFilter.filter_by_size}>
-            <Badge badgeLabel='s' />
-            <Badge badgeLabel='M' />
-            <Badge badgeLabel='L' />
-            <Badge badgeLabel='XL' />
-            <Badge badgeLabel='XM' />
-            <Badge badgeLabel='XXL' />
-          </div>
-        </div>
-      </div>
-
-      <div className={advancedFilter.filter}>
-        <SubHeading label='Filter By Price' />
+        <SubHeading label='Sort By Price' />
         <div className={advancedFilter.filter_container}>
           <label className='rating'>
             <input type='radio' />
@@ -44,6 +38,17 @@ export const AdvancedOption = () => {
             <input type='radio' />
             <span>Price- High to Low</span>
           </label>
+        </div>
+      </div>
+
+      <div className={advancedFilter.filter}>
+        <SubHeading label=' Filter By Price' />
+        <div className={advancedFilter.filter_container}>
+          <div className={advancedFilter.filter_by_size}>
+            <Badge badgeLabel='500 - 1000' />
+            <Badge badgeLabel='1000 - 5000' />
+            <Badge badgeLabel='5k & above' />
+          </div>
         </div>
       </div>
 
@@ -67,6 +72,10 @@ export const AdvancedOption = () => {
             <span className='check-desc'>1 Stars & above</span>
           </label>
         </div>
+      </div>
+
+      <div className={advancedFilter.filter}>
+        <Badge badgeLabel='RESET' />
       </div>
     </section>
   );

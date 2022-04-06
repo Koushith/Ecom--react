@@ -33,7 +33,7 @@ export const ProductSummary = () => {
         <h4>Rs.2499</h4>
       </ul>
 
-      <p class={productSummary.summary_text}>You will save Rs. 1999 on this order</p>
+      <p className={productSummary.summary_text}>You will save Rs. 1999 on this order</p>
 
       <Button label='PLACE ORDER' />
     </div>

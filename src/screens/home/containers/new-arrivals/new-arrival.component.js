@@ -14,7 +14,7 @@ export const NewArrival = () => {
       </h2>
       <div className={newArrival.product_grid}>
         {newArrivas?.map((item) => (
-          <ProductCard buttonLabel='ADD TO CART' products={item} />
+          <ProductCard buttonLabel='ADD TO CART' products={item} key={item._id} />
         ))}
       </div>
     </section>

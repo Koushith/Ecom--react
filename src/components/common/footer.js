@@ -35,13 +35,13 @@ export const Footer = () => {
 
           <ul className={footerStyles.listContainer}>
             <li>
-              <i class='fa-brands fa-twitter-square'></i>Twitter
+              <i className='fa-brands fa-twitter-square'></i>Twitter
             </li>
             <li>
-              <i class='fa-brands fa-instagram-square'></i>Instagram
+              <i className='fa-brands fa-instagram-square'></i>Instagram
             </li>
             <li>
-              <i class='fa-brands fa-facebook-square'></i>Facebook
+              <i className='fa-brands fa-facebook-square'></i>Facebook
             </li>
           </ul>
         </div>

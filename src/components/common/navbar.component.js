@@ -2,8 +2,13 @@ import { Link } from 'react-router-dom';
 import { Button } from '../primitives/button/button.component';
 import navbarStyles from './navbar.component.module.css';
 import { useNavigate } from 'react-router-dom';
+import { useCart } from '../../hooks/useCart';
 export const NavBar = () => {
   let navigate = useNavigate();
+  const { cartProducts } = useCart();
+
+  const itemInCartReducer = (prev, curr) => prev + curr.quantity;
+  const totalItemsInCart = cartProducts.cartList.reduce(itemInCartReducer, 0);
 
   return (
     <div className={navbarStyles.navbar_container}>
@@ -36,7 +41,7 @@ export const NavBar = () => {
                 <div className={navbarStyles.cart_badge}>
                   <i className='fa fa-shopping-cart '></i>
                   <div className={navbarStyles.innerText}>
-                    <span>1</span>
+                    <span>{totalItemsInCart}</span>
                   </div>
                 </div>
               </Link>

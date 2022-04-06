@@ -1,11 +1,14 @@
 import React from 'react';
+import { useCart } from '../../hooks/useCart';
 import { discountCalc } from '../../utils';
 import { Button } from '../primitives/button/button.component';
 import productCardStyles from './product-card.module.css';
 
 function ProductCard(props) {
-  const { buttonLabel, products } = props;
-  console.log('products', products);
+  const { products } = props;
+
+  const { cartProducts, setCartProducts } = useCart();
+
   return (
     <div className={productCardStyles.ecommerce_card}>
       <div className={productCardStyles.product_image}>
@@ -30,7 +33,11 @@ function ProductCard(props) {
         </div>
 
         <div className={productCardStyles.actions_button}>
-          <Button label={buttonLabel} variant='primary' />
+          <Button
+            label='ADD TO CART'
+            variant='primary'
+            onClick={() => setCartProducts({ type: 'ADD_TO_CART', payload: products })}
+          />
           <i className='fa-regular fa-heart'></i>
           {/* <i className='fa-solid fa-heart'></i> */}
         </div>

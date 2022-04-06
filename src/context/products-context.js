@@ -11,13 +11,21 @@ const ProductsContext = createContext([]);
 
 const ProductsProvider = ({ children }) => {
   const [products, setProducs] = useState([]);
+  const [category, setCategory] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  // console.log('from context', category);
 
   const fetchProducts = async () => {
     try {
       const {
         data: { products },
       } = await axios.get('/api/products');
+      setIsLoading(false);
 
+      const {
+        data: { categories },
+      } = await axios.get('/api/categories');
+      setCategory(categories);
       setProducs(products);
     } catch (e) {
       console.log('error ', e);
@@ -28,7 +36,11 @@ const ProductsProvider = ({ children }) => {
     fetchProducts();
   }, []);
 
-  return <ProductsContext.Provider value={{ products }}>{children}</ProductsContext.Provider>;
+  return (
+    <ProductsContext.Provider value={{ products, category, isLoading, setProducs }}>
+      {children}
+    </ProductsContext.Provider>
+  );
 };
 
 export { ProductsContext, ProductsProvider };
