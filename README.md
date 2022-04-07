@@ -7,8 +7,8 @@ https://www.loom.com/share/235655e605714f9cb5edc09d6a17323f
 ![screenshot (15)](https://user-images.githubusercontent.com/30016242/162263936-0c8a989f-0d3a-4e7a-8437-632384d20895.png)
 
 ### Test User Credentials
-- Email: adarshbalika@gmail.com
-- Password: adarshbalika,
+- Email: demouser@gmail.com
+- Password: demouser,
 
 
 ### Features
