@@ -1,7 +1,39 @@
-### TBU- 
+### Live application - https://ketch-store-git-feature-end-game-koushith.vercel.app/shop
 
-https://www.loom.com/share/d2b20bd13d044971ac68937aab69b26b
+https://www.loom.com/share/235655e605714f9cb5edc09d6a17323f
+
+![screenshot (14)](https://user-images.githubusercontent.com/30016242/162263797-efb5b972-3bcf-4eb9-88a0-b605a73feb51.png)
+
+![screenshot (15)](https://user-images.githubusercontent.com/30016242/162263936-0c8a989f-0d3a-4e7a-8437-632384d20895.png)
+
+### Test User Credentials
+- Email: adarshbalika@gmail.com
+- Password: adarshbalika,
 
 
-![screenshot (13)](https://user-images.githubusercontent.com/30016242/160714747-a88d4cfe-de65-4214-978d-74c550751dbe.png)
-![screenshot (12)](https://user-images.githubusercontent.com/30016242/160714751-74566a3c-fe3d-4119-be85-40349137ea43.png)
+### Features
+
+## PO
+
+- Home Page
+- Product Listing Page
+- Filter by
+  - Price
+  - Category
+  - Ratings
+
+- Cart Management
+- Wishlist Management
+- Authentication
+- Sign-up
+- Login
+- Logout
+
+## P1
+- Search
+- Single Product Page
+- Loading & Alerts
+
+## P2
+
+- Order summary
