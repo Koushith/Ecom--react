@@ -15,7 +15,7 @@ export const products = [
     size: 'L',
     description:
       'With an eye to the catwalks, Fame and Partners Tall apply their cool and individual style to a collection of hand-curated designs, exclusively for ASOS.',
-    categoryName: 'Women',
+    categoryName: 'womens',
     rating: 4,
     type: 'clothing',
     stock: true,
@@ -35,7 +35,7 @@ export const products = [
     size: 'M',
     description:
       'Sleek and slinky slip dress that will put the stars in your eyes by UO’s own Out From Under. Silky v-neck slip with a relaxed fit and side slit featuring skinny adjustable shoulder straps.',
-    categoryName: 'Women',
+    categoryName: 'womens',
     rating: 4.2,
     type: 'clothing',
     stock: true,
@@ -54,7 +54,7 @@ export const products = [
     tags: 'Women',
     size: 'S',
     description: 'Score a wardrobe win no matter the dress code with our Collection own-label collection.',
-    categoryName: 'Women',
+    categoryName: 'womens',
     rating: 4.8,
     type: 'clothing',
     stock: false,
@@ -74,7 +74,7 @@ export const products = [
     size: 'US10',
     description:
       'With an eye on the catwalks and hottest gals around, Missguided’s in-house team design for the dreamers, believers and night lovers.',
-    categoryName: 'Women',
+    categoryName: 'womens',
     rating: 1.2,
     type: 'clothing',
     stock: true,
@@ -93,7 +93,7 @@ export const products = [
     tags: 'Women',
     size: 'US6',
     description: 'Score a wardrobe win no matter the dress code with our ASOS Collection own-label collection.',
-    categoryName: 'Women',
+    categoryName: 'womens',
     rating: 2.9,
     type: 'clothing',
     stock: false,
@@ -113,7 +113,7 @@ export const products = [
     size: 'US7',
     description:
       'Offering irresistible fashion and fast off the runway styles, New Look joins the ASOS round up of great British high street brands.',
-    categoryName: 'Women',
+    categoryName: 'womens',
     rating: 4.9,
     type: 'clothing',
     stock: true,
@@ -133,7 +133,7 @@ export const products = [
     size: 'US8',
     description:
       'Skate hard and look good is the motto of skate brand EleMent. Founded during the early 90s in the surf ‘n’ skate state of California, the label fuses high-quality construction with skate-inspired designs.',
-    categoryName: 'Men',
+    categoryName: 'mens',
     rating: 3,
     type: 'clothing',
     stock: true,
@@ -153,7 +153,7 @@ export const products = [
     size: 'US8',
     description:
       'Skate hard and look good is the motto of skate brand EleMent. Founded during the early 90s in the surf ‘n’ skate state of California, the label fuses high-quality construction with skate-inspired designs.',
-    categoryName: 'Men',
+    categoryName: 'mens',
     rating: 3,
     type: 'clothing',
     stock: true,
@@ -172,7 +172,7 @@ export const products = [
     tags: 'Men',
     size: 'US9',
     description: 'Designed in-house in our London studio by our dedicated Menswear team.',
-    categoryName: 'Men',
+    categoryName: 'mens',
     rating: 3.8,
     type: 'clothing',
     stock: true,
@@ -192,7 +192,7 @@ export const products = [
     size: 'M',
     description:
       'Designed in-house in our London studio by our dedicated Menswear team, ASOS offer a range of Men’s clothing designed and created exclusively for ASOS.',
-    categoryName: 'Men',
+    categoryName: 'mens',
     rating: 3.8,
     type: 'clothing',
     stock: false,
@@ -208,11 +208,11 @@ export const products = [
     title: 'UBC JACKET',
     price: 4000,
     originalPrice: 5000,
-    tags: 'Men',
+    tags: 'mens',
     size: 'L',
     description:
       'United Colors of Benetton became infamous in the ’90s for their shock-tactic advertising campaigns and continued drive of creativity and courage with their global outlook and worldwide communication.',
-    categoryName: 'Men',
+    categoryName: 'jackets',
     rating: 4.6,
     type: 'clothing',
     stock: true,
@@ -232,7 +232,7 @@ export const products = [
     size: 'S',
     description:
       'High street favorites River Island are known for the unique touches they add to their directional pieces of Men’s clothing.',
-    categoryName: 'Men',
+    categoryName: 'mens',
     rating: 5,
     type: 'clothing',
 
@@ -253,7 +253,7 @@ export const products = [
     size: 'M',
     description:
       'Still continuing to stand at the forefront of Men’s fashion; Selected Homme specialises in raw and simple designs that are never obviously trend-driven, but always edgy, elegant and masculine with focus on attention to detail.',
-    categoryName: 'Men',
+    categoryName: 'mens',
     rating: 3,
     type: 'clothing',
     stock: true,
@@ -273,7 +273,7 @@ export const products = [
     size: 'L',
     description:
       'Superstar trainers by sportswear giant adidas Originals have made themselves unforgettable both on the basketball court and the street since 1970.',
-    categoryName: 'Shoes',
+    categoryName: 'shoes',
     rating: 4.8,
     type: 'shoes',
     stock: true,
@@ -294,7 +294,7 @@ export const products = [
 
     description:
       'Classic 996 running shoe is brought to you by pioneering athletics label, New Balance. Built from supple suede and mesh upper, they feature a C-CAP(r) midsole and ENCAP(r) wedge technology.',
-    categoryName: 'Shoes',
+    categoryName: 'shoes',
     rating: 3,
     type: 'shoes',
     stock: true,
@@ -314,7 +314,7 @@ export const products = [
     size: 'L',
     description:
       'Vans updates their classic Old Skool silhouette in a fresh colourway for a modern twist. Durable cotton canvas upper offers a lace front closure and a padded ankle collar and lining for comfortable support.',
-    categoryName: 'Shoes',
+    categoryName: 'shoes',
     rating: 3.8,
     type: 'shoes',
     stock: false,

@@ -6,18 +6,20 @@ import App from './App';
 import { ProductsProvider } from './context/products-context';
 import { CartProvider } from './context/cart-context';
 import { WishListProvider } from './context/wishlist-context';
-// import { FilteredProvider } from './context/filter-context';
+import { FilterProvider } from './context/filter-context';
 
 makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <ProductsProvider>
-        <CartProvider>
-          <WishListProvider>
-            <App />
-          </WishListProvider>
-        </CartProvider>
+        <FilterProvider>
+          <CartProvider>
+            <WishListProvider>
+              <App />
+            </WishListProvider>
+          </CartProvider>
+        </FilterProvider>
       </ProductsProvider>
     </BrowserRouter>
   </React.StrictMode>,
