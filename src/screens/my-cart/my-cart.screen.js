@@ -7,7 +7,6 @@ import productSummary from './my-cart.screen.module.css';
 
 export const CartScreen = () => {
   const { cartProducts } = useCart();
-  // console.log('items from caer screen', cart.cart.items);
 
   return (
     <section className={productSummary.cartScreen_container}>
@@ -16,7 +15,8 @@ export const CartScreen = () => {
       </div>
       <div className={productSummary.cart_itemContainer}>
         <div className={productSummary.cart_container}>
-          {cartProducts.map((item, index) => (
+          {cartProducts.cartList.length === 0 && <Heading label='No items in the cart' />}
+          {cartProducts.cartList.map((item, index) => (
             <CartItem items={item} key={index} />
           ))}
         </div>

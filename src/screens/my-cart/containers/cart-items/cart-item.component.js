@@ -1,11 +1,17 @@
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { Button } from '../../../../components';
+import { useCart } from '../../../../hooks/useCart';
+import { useWishList } from '../../../../hooks/useWishlist';
 import { discountCalc } from '../../../../utils';
 import cartItem from './cart-item.component.module.css';
 
 export const CartItem = (props) => {
-  const { cartProducts } = props;
+  const { items } = props;
+  const { setCartProducts } = useCart();
+  const { wishListState, setWishListState } = useWishList();
+  const navigate = useNavigate();
+  const isItemInWishlist = () => wishListState.wishListArray.find((item) => item.id === items.id);
 
-  // console.log('itemsssss', items);
   return (
     <div className={cartItem.item_container}>
       <div className={cartItem.details_container}>
@@ -23,16 +29,38 @@ export const CartItem = (props) => {
             <p className={cartItem.discount_percentage}>({discountCalc(items.price, items.originalPrice)}% OFF)</p>
           </div>
           <div className={cartItem.quantity_container}>
-            <button>-</button>
-            <input type='number' value='2' />
-            <button>+</button>
+            <button onClick={() => setCartProducts({ type: 'DECREMENT_QTY', payload: items })}>-</button>
+            <input type='number' value={items.quantity} />
+            <button onClick={() => setCartProducts({ type: 'INCREMENT_QTY', payload: items })}>+</button>
           </div>
         </div>
       </div>
       <div className={cartItem.cart_actions}>
         {' '}
-        <Button label='REMOVE' variant='ghost' />
-        <Button label='MOVE TO WISHLIST' variant='primary' />
+        <Button
+          label='REMOVE'
+          variant='ghost'
+          onClick={() =>
+            setCartProducts({
+              type: 'REMOVE_FROM_CART',
+              payload: items,
+            })
+          }
+        />
+        {wishListState.wishListArray.find((item) => item.id === items.id) ? (
+          <Button label='GO TO WISHLIST' onClick={() => navigate('/wishlist')} />
+        ) : (
+          <Button
+            onClick={() =>
+              setWishListState({
+                type: 'ADD_TO_WISHLIST',
+                payload: items,
+              })
+            }
+            variant='primary'
+            label='MOVE TO WISHLIST'
+          />
+        )}
       </div>
     </div>
   );
