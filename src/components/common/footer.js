@@ -58,7 +58,9 @@ export const Footer = () => {
         </div>
       </div>
       <div className={footerStyles.copyright_container}>
-        <h2>Copyright? Heck No. 100% Open Source. | Ketch - Developed by Koushith Amin. </h2>
+        <h2 onClick={() => window.open('http://github.com/koushith', '_blank')}>
+          Copyright? Heck No. 100% Open Source. | Ketch - Developed by Koushith Amin.{' '}
+        </h2>
       </div>
     </footer>
   );
