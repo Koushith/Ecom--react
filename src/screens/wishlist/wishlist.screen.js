@@ -9,12 +9,11 @@ export const WishListScreen = () => {
     wishListState: { wishListArray },
   } = useWishList();
   const navigate = useNavigate();
-  console.log('state', wishListArray);
 
   return (
     <section className={styles.wishlist_container}>
       <div className={styles.heading}>
-        <Heading label={`My Cart (${wishListArray.length})`} />
+        <Heading label={`My WishLists (${wishListArray.length})`} />
       </div>
       <div className={styles.product_container}>
         {!wishListArray.length && <Heading label='No Wishlisted items- go to Shop' onClick={() => navigate('/shop')} />}

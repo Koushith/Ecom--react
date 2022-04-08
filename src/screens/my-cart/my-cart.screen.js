@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Heading } from '../../components/primitives/text/text.component';
 import { useCart } from '../../hooks/useCart';
 import { CartItem } from './containers/cart-items/cart-item.component';
@@ -11,7 +10,7 @@ export const CartScreen = () => {
   return (
     <section className={productSummary.cartScreen_container}>
       <div className={productSummary.heading}>
-        <Heading label='My Cart (1)' />
+        <Heading label={`My Catrt (${cartProducts.cartList.length})`} />
       </div>
       <div className={productSummary.cart_itemContainer}>
         <div className={productSummary.cart_container}>

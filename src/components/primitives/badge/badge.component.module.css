@@ -10,9 +10,15 @@
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
+  background: none;
 }
 
 .badge:hover {
+  background-color: #f66249;
+  color: #fff;
+}
+
+#badge:focus {
   background-color: #f66249;
   color: #fff;
 }
