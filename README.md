@@ -1,4 +1,4 @@
-### Live application - https://ketch-store-git-feature-end-game-koushith.vercel.app/shop
+### Live application - https://ketch-store-nasq3epfb-koushith.vercel.app/
 
 https://www.loom.com/share/235655e605714f9cb5edc09d6a17323f
 
